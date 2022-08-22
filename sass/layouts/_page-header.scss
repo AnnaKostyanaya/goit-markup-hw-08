@@ -5,7 +5,6 @@
 
 .nav__list,
 .contacts-list {
-    display: flex;
     @extend %list;
 }
 
@@ -39,7 +38,6 @@
 }
 
 .contacts__list--link {
-    display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -51,11 +49,11 @@
 }
 
 .nav {
-    display: flex;
+
 }
 
 .container__nav {
-    display: flex;
+
     align-items: center;
 }
 
@@ -73,7 +71,7 @@
 }
 
 .contacts-list__items {
-    display: flex;
+
     align-items: center;
 }
 

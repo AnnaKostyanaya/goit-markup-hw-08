@@ -19,13 +19,11 @@ display: block;
 }
 
 .portfolio {
-    display: flex;
     flex-wrap: wrap;
     @extend %list;
 }
 
 .portfolio__element {
-    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }

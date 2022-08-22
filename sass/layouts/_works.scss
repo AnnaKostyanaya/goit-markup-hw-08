@@ -7,7 +7,7 @@
 }
 
 .works__list {
-    display: flex;
+    
     @extend %list;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .works__text {
-    display: flex;
+    
     position: absolute;
     bottom: 0;
 

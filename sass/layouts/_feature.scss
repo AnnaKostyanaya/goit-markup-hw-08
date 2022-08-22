@@ -20,7 +20,6 @@
 }
 
 .feature__list {
-    display: flex;
     @extend %list;
 }
 
@@ -29,7 +28,6 @@
 }
 
 .feature__box {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 270px;
