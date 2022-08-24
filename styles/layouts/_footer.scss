@@ -1,0 +1,133 @@
+.footer {
+    background-color: var(--accent-background);
+    color: var(--white-fontcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.address__items {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %list;
+}
+
+.address__link {
+    @extend %link;
+    color: inherit;
+}
+
+.address--street {
+    color: var(--white-fontcolor);
+}
+
+.address__link {
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__items {
+    margin-bottom: 9px;
+}
+
+.address__items:last-child {
+    margin-bottom: 0px;
+}
+
+.join__title,
+.join-form__title {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container--alt {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    margin-right: auto;
+}
+
+
+.join__list {
+    display: flex;
+    align-items: baseline;
+    @extend %list;
+}
+
+.join__items:nth-last-child(-n+3) {
+    margin-left: 10px;
+}
+
+.join__link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 22px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join__link {
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.join-form {
+    margin-left: auto;
+}
+
+.join-form__email {
+    display: flex;
+}
+
+.join-form__email-form {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.join-form__input {
+    min-width: 358px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--accent-background);
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+}
+
+.join-form__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.join-form__iconsend {
+    margin-left: 10px;
+}
