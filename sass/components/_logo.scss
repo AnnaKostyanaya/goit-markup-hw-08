@@ -15,9 +15,20 @@
     display: block;
     width: 145px;
     height: 31px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 16px 0px;
+    
     @extend %link;
+    @media screen and (min-width: 480px) {
+            padding: 16px 0px;
+        }
+    @media screen and (min-width: 768px) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+            margin-right: 87px;
+    }
+
 }
 
 .logo--dark {
