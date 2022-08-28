@@ -520,34 +520,34 @@ img {
   fill: rgb(33, 150, 243);
 }
 
-.menu-button {
+.menu-toggle {
   display: block;
   margin: 0;
   padding: 10px 0px;
   border: none;
   background-color: transparent;
-  z-index: 9999;
+  z-index: 99999;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
 }
 
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-toggle.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-toggle.is-open .icon-menu {
   display: none;
 }
 
-.menu-button.is-open:hover .icon-cross,
-.menu-button.is-open:focus .icon-cross {
+.menu-toggle.is-open:hover .icon-cross,
+.menu-toggle.is-open:focus .icon-cross {
   fill: var(--accent-color);
 }
 
@@ -1040,7 +1040,7 @@ img {
   }
 }
 
-.menu-button__icons {
+.menu-toggle__icons {
   height: 40px;
   width: 40px;
 }

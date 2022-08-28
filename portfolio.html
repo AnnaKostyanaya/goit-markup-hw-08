@@ -21,16 +21,14 @@
         <div class="container mobile-container">
             <div class="mobile-menu">
                 <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
-                <button data-menu-button type="button" class="menu-button is-open" aria-controls="menu-container"
-                    aria-expanded="false">
-                    <svg class="menu-button__icons" aria-label="Переключатель мобільного меню" width="40" hidht="40">
+                <button data-menu-button type="button" class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" hidht="40">
                         <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
                         <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
             </div>
-            <div data-menu class="menu-container is-open" id="menu-container">
-                <div class="menu-container__background"></div>
+            <div data-menu class="menu-container" id="mobile-menu">
                 <div class="menu-container__nav">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -342,5 +340,9 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/mobile-js"></script>
 </body>
