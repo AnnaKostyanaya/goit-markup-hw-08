@@ -30,6 +30,7 @@
                 </button>
             </div>
             <div data-menu class="menu-container is-open" id="menu-container">
+                <div class="menu-container__background"></div>
                 <div class="menu-container__nav">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -78,10 +79,10 @@
                 <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
                 <ul class="nav__list">
                     <li class="nav__items">
-                        <a href="./index.html" class="nav__link">Студія</a>
+                        <a href="./index.html" class="nav__link nav--current">Студія</a>
                     </li>
                     <li class="nav__items">
-                        <a href="./portfolio.html" class="nav__link nav--current">Портфоліо</a>
+                        <a href="./portfolio.html" class="nav__link">Портфоліо</a>
                     </li>
                     <li class="nav__items">
                         <a href="" class="nav__link">Контакти</a>
@@ -235,7 +236,7 @@
             <div class="container--alt">
                 <ul class="team__list">
                     <li class="team__items">
-                        <img class="team__foto" src="./images/foto1.jpg" width="270" height="260"
+                        <img class="team__foto" src="./images/foto1.jpg"
                             alt="фотография сотрудника 1">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
@@ -271,7 +272,7 @@
                         </ul>
                     </li>
                     <li class="team__items">
-                        <img class="team__foto" src="./images/foto2.jpg" width="270" height="260"
+                        <img class="team__foto" src="./images/foto2.jpg"
                             alt="фотография сотрудника 2">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
@@ -307,7 +308,7 @@
                         </ul>
                     </li>
                     <li class="team__items">
-                        <img class="team__foto" src="./images/foto3.jpg" width="270" height="260"
+                        <img class="team__foto" src="./images/foto3.jpg"
                             alt="фотография сотрудника 3">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
@@ -343,7 +344,7 @@
                         </ul>
                     </li>
                     <li class="team__items">
-                        <img class="team__foto" src="./images/foto4.jpg" width="270" height="260"
+                        <img class="team__foto" src="./images/foto4.jpg"
                             alt="фотография сотрудника 4">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__position">UI Designer</p>
@@ -435,6 +436,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container--alt">
+            <div class=" "></div>
             <div class="footer__address">
                 <a href="" class="logo logo--link logo--dark"><span class="logo__text">Web</span>Studio</a>
                 <address class="address">
@@ -487,7 +489,7 @@
                             <input class="join-form__input" type="email" name="email" id="email" placeholder="E-mail" />
                             <label class="join-form__label" for="email"></label>
                         </div>
-                        <div>
+                        <div class="join-form__button-part">
                             <button class="join-form__btn" type="submit">Підписатися
                                 <svg class="join-form__iconsend" width="24" height="24">
                                     <use href="./images/sprite.svg#icon-iconsend"></use>

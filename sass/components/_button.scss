@@ -72,7 +72,7 @@
     padding: 10px 0px;
     border: none;
     background-color: transparent;
-    z-index: 2;
+    z-index: 9999;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -89,4 +89,9 @@
 
 .menu-button.is-open .icon-menu {
     display: none;
+}
+
+.menu-button.is-open:hover .icon-cross,
+.menu-button.is-open:focus .icon-cross {
+    fill: var(--accent-color);
 }
