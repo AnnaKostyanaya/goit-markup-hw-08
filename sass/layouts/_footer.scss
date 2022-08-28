@@ -61,6 +61,14 @@
     }
 }
 
+.footer--first-flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    }
+
 .footer__address {
     @media screen and (max-width: 1599px) {
         text-align: center;
@@ -68,7 +76,7 @@
     }
 
     @media screen and (min-width: 1600px) {
-        margin-right: auto;
+        margin-right: 70px;
     }
     
 }

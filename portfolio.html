@@ -15,43 +15,100 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-
 <body>
     <!-- Шапка сайта -->
-    <header>
-            <div class="container container__nav">
-                <nav class="nav">
-                    <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
-                    <ul class="nav__list">
-                        <li class="nav__items">
-                            <a href="./index.html" class="nav__link">Студія</a>
+    <header class="page-header">
+        <div class="container mobile-container">
+            <div class="mobile-menu">
+                <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
+                <button data-menu-button type="button" class="menu-button is-open" aria-controls="menu-container"
+                    aria-expanded="false">
+                    <svg class="menu-button__icons" aria-label="Переключатель мобільного меню" width="40" hidht="40">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+            </div>
+            <div data-menu class="menu-container is-open" id="menu-container">
+                <div class="menu-container__background"></div>
+                <div class="menu-container__nav">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__items">
+                                <a href="./index.html" class="nav__link">Студія</a>
+                            </li>
+                            <li class="nav__items">
+                                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+                            </li>
+                            <li class="nav__items">
+                                <a href="" class="nav__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-container__contacts">
+                    <ul class="contacts-list">
+                        <li class="contacts-list__items contacts-list--mail">
+                            <a href="mailto:info@devstudio.com" class="contacts__list--link">
+                                <svg class="contacts-list__icon" width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com
+                            </a>
                         </li>
-                        <li class="nav__items">
-                            <a href="./portfolio.html" class="nav__link nav--current">Портфоліо</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="" class="nav__link">Контакти</a>
+                        <li class="contacts-list__items contacts-list--tel">
+                            <a href="tel:0961111111" class="contacts__list--link">
+                                <svg class="contacts-list__icon" width="10" height="16">
+                                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                                </svg>096 111 11 11
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="contacts-list">
-                    <li class="contacts-list__items contacts-list--mail">
-                        <a href="mailto:info@devstudio.com" class="contacts__list--link">
-                            <svg class="contacts-list__icon" width="16" height="12">
-                                <use href="./images/sprite.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com
-                        </a>
+                </div>
+                <div class="social-links">
+                    <ul class="social-links__list">
+                        <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
+                        <div class="social-links__line"></div>
+                        <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
+                        <div class="social-links__line"></div>
+                        <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
+                        <div class="social-links__line"></div>
+                        <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container container__nav">
+            <nav class="nav">
+                <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__link">Студія</a>
                     </li>
-                    <li class="contacts-list__items contacts-list--tel">
-                        <a href="tel:0961111111" class="contacts__list--link">
-                            <svg class="contacts-list__icon" width="10" height="16">
-                                <use href="./images/sprite.svg#icon-smartphone"></use>
-                            </svg>096 111 11 11
-                        </a>
+                    <li class="nav__items">
+                        <a href="./portfolio.html" class="nav__link nav--current">Портфоліо</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="" class="nav__link">Контакти</a>
                     </li>
                 </ul>
-            </div>
-        <div class="hline"></div>
+            </nav>
+            <ul class="contacts-list">
+                <li class="contacts-list__items contacts-list--mail">
+                    <a href="mailto:info@devstudio.com" class="contacts__list--link">
+                        <svg class="contacts-list__icon" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-list__items contacts-list--tel">
+                    <a href="tel:0961111111" class="contacts__list--link">
+                        <svg class="contacts-list__icon" width="10" height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="menu">
@@ -69,7 +126,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img1.jpg" alt="фотография Технокряк"
-                                    width="370" height="294">
+                                    height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -85,7 +142,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img2.jpg"
-                                    alt="фотография Постер New Orlean vs Golden Star" width="370" height="294">
+                                    alt="фотография Постер New Orlean vs Golden Star" height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -101,7 +158,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img3.jpg"
-                                    alt="фотография Ресторан Seafood" width="370" height="294">
+                                    alt="фотография Ресторан Seafood" height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -117,7 +174,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description">
-                                <img class="portfolio__foto" src="./images/img4.jpg" alt="фотография Проект Prime" width="370"
+                                <img class="portfolio__foto" src="./images/img4.jpg" alt="фотография Проект Prime"
                                     height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
@@ -134,7 +191,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img5.jpg" alt="фотография Проект Boxes"
-                                    width="370" height="294">
+                                    height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -150,7 +207,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img6.jpg"
-                                    alt="фотография Inspiration has no Borders" width="370" height="294">
+                                    alt="фотография Inspiration has no Borders" height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -166,7 +223,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img7.jpg"
-                                    alt="фотография Издание Limited Edition" width="370" height="294">
+                                    alt="фотография Издание Limited Edition" height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -182,7 +239,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description">
-                                <img class="portfolio__foto" src="./images/img8.jpg" alt="фотография Проект LAB" width="370"
+                                <img class="portfolio__foto" src="./images/img8.jpg" alt="фотография Проект LAB"
                                     height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
@@ -199,7 +256,7 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description"><img class="portfolio__foto" src="./images/img9.jpg"
-                                    alt="фотография Growing Business" width="370" height="294">
+                                    alt="фотография Growing Business" height="294">
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -273,7 +330,7 @@
                             <input class="join-form__input" type="email" name="email" id="email" placeholder="E-mail" />
                             <label class="join-form__label" for="email"></label>
                         </div>
-                        <div>
+                        <div class="join-form__button-part">
                             <button class="join-form__btn" type="submit">Підписатися
                                 <svg class="join-form__iconsend" width="24" height="24">
                                     <use href="./images/sprite.svg#icon-iconsend"></use>
@@ -285,4 +342,5 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>

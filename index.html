@@ -35,13 +35,13 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__items">
-                                <a href="" class="nav__link nav--current">Студія</a>
+                                <a data-menu-button href="./index.html" class="nav__link" aria-controls="menu-container" aria-expanded="false">Студія</a>
                             </li>
                             <li class="nav__items">
-                                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+                                <a data-menu-button href="./portfolio.html" class="nav__link" aria-controls="menu-container" aria-expanded="false">Портфоліо</a>
                             </li>
                             <li class="nav__items">
-                                <a href="" class="nav__link">Контакти</a>
+                                <a data-menu-button href="" class="nav__link" aria-controls="menu-container" aria-expanded="false">Контакти</a>
                             </li>
                         </ul>
                     </nav>
@@ -436,50 +436,51 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container--alt">
-            <div class=" "></div>
-            <div class="footer__address">
-                <a href="" class="logo logo--link logo--dark"><span class="logo__text">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__items address--street">м. Київ, пр-т Лесі Українки, 26</li>
-                        <li class="address__items"><a href="mailto:info@example.com" class="address__link">info@example.com</a>
+            <div class="footer--first-flex">
+                <div class="footer__address">
+                    <a href="" class="logo logo--link logo--dark"><span class="logo__text">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__items address--street">м. Київ, пр-т Лесі Українки, 26</li>
+                            <li class="address__items"><a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                            </li>
+                            <li class="address__items"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <p class="join__title">приєднуйтесь</p>
+                    <ul class="join__list">
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--instagram" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-instagramwhite"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__items"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a></li>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--twitter" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-twitterwhite"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--facebook" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-facebookwhite"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--linkedin" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-linkedinwhite"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <p class="join__title">приєднуйтесь</p>
-                <ul class="join__list">
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--instagram" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-instagramwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--twitter" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-twitterwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--facebook" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-facebookwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--linkedin" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-linkedinwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="join-form">
                 <form>

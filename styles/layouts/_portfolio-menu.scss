@@ -17,10 +17,27 @@
 }
 
 .menu__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
     @extend %list;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        width: 326px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1599px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
 }
 
 .menu__button {
