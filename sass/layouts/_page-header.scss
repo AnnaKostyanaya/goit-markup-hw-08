@@ -249,6 +249,7 @@
     z-index: 999;
     padding-top: 48px;
     padding-left: 40px;
+    transition: opacity 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // .menu-container::after {
@@ -306,6 +307,7 @@
 .social-links__list {
     @extend %list;
     display: flex;
+    margin-bottom: 48px;
 }
 
 .social-links__item {
