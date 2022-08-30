@@ -25,9 +25,9 @@
             padding-top: 24px;
             padding-bottom: 25px;
         }
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
-            margin-right: 87px;
-    }
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //         margin-right: 87px;
+    // }
 
 }
 
@@ -35,7 +35,7 @@
     color: var(--white-fontcolor);
     padding: 0;
     margin-bottom: 20px;
-    @media screen and (min-width: 480px) and (max-width: 1599px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         margin-right: auto;
         margin-left: auto;
     }

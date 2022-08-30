@@ -49,13 +49,13 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
     text-align: center;
 }
 }
 
 .container--alt {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
     }
@@ -70,19 +70,19 @@
     }
 
 .footer__address {
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
         margin-bottom: 60px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 70px;
     }
     
 }
 
 .join {
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
     }
 }
@@ -92,7 +92,7 @@
     align-items: baseline;
     @extend %list;
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         justify-content: center;
     }
 }
@@ -126,7 +126,7 @@
 }
 
 .join-form__email {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
     }
 }
@@ -134,7 +134,7 @@
 .join-form__email-form {
     position: relative;
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;

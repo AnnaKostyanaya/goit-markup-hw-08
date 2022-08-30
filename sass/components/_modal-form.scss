@@ -36,11 +36,11 @@
     min-width: 450px;
     top: 70%;
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     min-width: 450px;
     top: 95%;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     min-width: 528px;
     top: 50%;
 }
@@ -49,10 +49,10 @@
 .modal__form {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 768px) and (max-width: 1599px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         min-width: 370px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         min-width: 448px;
     }
 }
@@ -81,11 +81,11 @@
     box-shadow: rgba(0, 0, 0, 0.25);
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
-    @media screen and (min-width: 480px) and (max-width: 1599px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         min-width: 370px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         min-width: 448px;
     }
 }
@@ -124,11 +124,11 @@
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.25);
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 480px) and (max-width: 1599px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         min-width: 370px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         min-width: 448px;
     }
 }
@@ -143,10 +143,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--grey-fontcolor);
-    @media screen and (min-width: 480px) and (max-width: 1599px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         font-size: 12px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
