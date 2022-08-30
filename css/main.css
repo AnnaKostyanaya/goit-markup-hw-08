@@ -360,32 +360,30 @@ img {
 }
 
 .container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
   }
 }
 
 .container--alt {
+  width: 100%;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -403,8 +401,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container--alt {
     width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
   }
 }
 
@@ -436,6 +432,11 @@ img {
   .logo--link {
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo--link {
+    margin-right: 87px;
   }
 }
 
@@ -796,8 +797,7 @@ img {
 @media screen and (min-width: 768px) {
   .container__nav {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: space-between;
   }
 }
 
@@ -809,6 +809,7 @@ img {
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -832,7 +833,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list {
     margin-left: auto;
-    width: 161px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -844,24 +844,12 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav__list {
-    margin-bottom: 302px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav__list {
     margin-right: auto;
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav__list {
-    margin-left: 93px;
-    margin-right: 318px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .nav__items:not(:last-child) {
     margin-bottom: 32px;
@@ -1039,7 +1027,8 @@ img {
   }
 }
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   transform: translateX(0);
 }
 
