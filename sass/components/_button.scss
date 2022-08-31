@@ -75,32 +75,43 @@
     }
 }
 
-.menu-toggle {
+.menu-close,
+.menu-open {
     display: block;
     margin: 0;
     padding: 10px 0px;
     border: none;
     background-color: transparent;
-    z-index: 99999;
 
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.menu-toggle .icon-cross {
+.menu-toggle__icons {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-close {
+    position: absolute;
+    top: -0.1%;
+    left: 89%;
+}
+
+.menu-close .icon-cross {
     display: none;
 }
 
-.menu-toggle.is-open .icon-cross {
+.menu-container.is-open .icon-cross {
     display: block;
 }
 
-.menu-toggle.is-open .icon-menu {
+.menu-container.is-open .icon-menu {
     display: none;
 }
 
-.menu-toggle.is-open:hover .icon-cross,
-.menu-toggle.is-open:focus .icon-cross {
+.menu-close.js-close-menu:hover .icon-cross,
+.menu-close.js-close-menu:focus .icon-cross {
     fill: var(--accent-color);
 }

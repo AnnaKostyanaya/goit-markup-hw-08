@@ -432,10 +432,6 @@ img {
   .logo--link {
     padding-top: 24px;
     padding-bottom: 25px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .logo--link {
     margin-right: 87px;
   }
 }
@@ -528,34 +524,46 @@ img {
   fill: rgb(33, 150, 243);
 }
 
-.menu-toggle {
+.menu-close,
+.menu-open {
   display: block;
   margin: 0;
   padding: 10px 0px;
   border: none;
   background-color: transparent;
-  z-index: 99999;
 }
 @media screen and (min-width: 768px) {
-  .menu-toggle {
+  .menu-close,
+.menu-open {
     display: none;
   }
 }
 
-.menu-toggle .icon-cross {
+.menu-toggle__icons {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-close {
+  position: absolute;
+  top: -0.1%;
+  left: 89%;
+}
+
+.menu-close .icon-cross {
   display: none;
 }
 
-.menu-toggle.is-open .icon-cross {
+.menu-container.is-open .icon-cross {
   display: block;
 }
 
-.menu-toggle.is-open .icon-menu {
+.menu-container.is-open .icon-menu {
   display: none;
 }
 
-.menu-toggle.is-open:hover .icon-cross,
-.menu-toggle.is-open:focus .icon-cross {
+.menu-close.js-close-menu:hover .icon-cross,
+.menu-close.js-close-menu:focus .icon-cross {
   fill: var(--accent-color);
 }
 
@@ -585,6 +593,7 @@ img {
 .modal {
   position: absolute;
   left: 50%;
+  top: 50%;
   padding: 40px;
   background-color: var(--main-backgroundcolor);
   border-radius: 4px;
@@ -595,19 +604,16 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     min-width: 450px;
-    top: 70%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     min-width: 450px;
-    top: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    top: 50%;
   }
 }
 
@@ -809,17 +815,20 @@ img {
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
-    justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav__list {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
@@ -828,6 +837,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -844,18 +854,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav__list {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 @media screen and (max-width: 767px) {
-  .nav__items:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  .contacts-list__items:last-child {
-    margin-bottom: 32px;
+  .nav__items {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1007,17 +1008,11 @@ img {
 .menu-container {
   display: none;
   position: absolute;
-  width: 100%;
-  height: 796px;
   left: -1px;
   top: -1px;
   background-color: var(--main-backgroundcolor);
-  opacity: 1;
-  z-index: 999;
-  padding-top: 48px;
-  padding-left: 40px;
-  transform: translateX(100%);
-  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 48px 40px;
+  transform: scale(0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -1029,7 +1024,16 @@ img {
 .menu-container.is-open {
   display: flex;
   flex-wrap: wrap;
-  transform: translateX(0);
+  align-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container__nav,
+.menu-container__contacts {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1040,18 +1044,13 @@ img {
   }
 }
 
-.menu-toggle__icons {
-  height: 40px;
-  width: 40px;
-}
-
 .menu-container.is-open .social-links {
   display: block;
 }
 
 .social-links__list {
   display: flex;
-  margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .social-links__item {
@@ -1075,6 +1074,12 @@ img {
   display: block;
   height: 22px;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-container--bottom-part {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
 .hero {
