@@ -21,10 +21,11 @@
     line-height: 1.19;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .team__foto {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     @media screen and (max-width: 767px) {
         width: 450px;
         height: 460px;
