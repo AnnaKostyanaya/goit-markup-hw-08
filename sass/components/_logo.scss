@@ -35,7 +35,8 @@
     color: var(--white-fontcolor);
     padding: 0;
     margin-bottom: 20px;
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+
+    @media screen and (max-width: 1199px) {
         margin-right: auto;
         margin-left: auto;
     }

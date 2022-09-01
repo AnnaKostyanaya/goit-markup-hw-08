@@ -64,6 +64,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        row-gap: 32px;
         margin-bottom: 64px;
         }
 }
@@ -237,6 +238,7 @@
     .mobile-container,
     .social-links {
         display: none;
+        position: relative;
     }
 }
 

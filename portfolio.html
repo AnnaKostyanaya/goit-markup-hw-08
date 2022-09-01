@@ -22,14 +22,14 @@
             <div class="mobile-menu">
                 <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
                 <button type="button" class="menu-open js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" hidht="40">
+                    <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" height="40">
                         <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
             </div>
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button type="button" class="menu-close js-close-menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" hidht="40">
+                    <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" height="40">
                         <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
                     </svg>
                 </button>
@@ -68,12 +68,15 @@
                 </div>
                 <div class="social-links">
                     <ul class="social-links__list">
-                        <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
-                        <div class="social-links__line"></div>
-                        <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
-                        <div class="social-links__line"></div>
-                        <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
-                        <div class="social-links__line"></div>
+                        <li class="social-links__item"><a class="social-links__link" href="">Instagram</a>
+                            <div class="social-links__line"></div>
+                        </li>
+                        <li class="social-links__item"><a class="social-links__link" href="">Twitter</a>
+                            <div class="social-links__line"></div>
+                        </li>
+                        <li class="social-links__item"><a class="social-links__link" href="">Facebook</a>
+                            <div class="social-links__line"></div>
+                        </li>
                         <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
                     </ul>
                 </div>
@@ -130,8 +133,16 @@
                 <ul class="portfolio">
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img1.jpg" alt="фотография Технокряк"
-                                    height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject1.jpg 450w, ./images/mobile/2xmobileproject1.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject1.jpg 354w, ./images/tablet/2xtabletproject1.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject1.jpg 370w, ./images/PC/2xPCproject1.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject1.jpg" alt="Фотокартка Технокряк">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -146,8 +157,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img2.jpg"
-                                    alt="фотография Постер New Orlean vs Golden Star" height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject2.jpg 450w, ./images/mobile/2xmobileproject2.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject2.jpg 354w, ./images/tablet/2xtabletproject2.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject2.jpg 370w, ./images/PC/2xPCproject2.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject2.jpg" alt="Фотокартка Постер New Orlean vs Golden Star">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -162,8 +181,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img3.jpg"
-                                    alt="фотография Ресторан Seafood" height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject3.jpg 450w, ./images/mobile/2xmobileproject3.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject3.jpg 354w, ./images/tablet/2xtabletproject3.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject3.jpg 370w, ./images/PC/2xPCproject3.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject3.jpg" alt="Фотокартка Ресторан Seafood">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -179,8 +206,15 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description">
-                                <img class="portfolio__foto" src="./images/img4.jpg" alt="фотография Проект Prime"
-                                    height="294">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject4.jpg 450w, ./images/mobile/2xmobileproject4.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject4.jpg 354w, ./images/tablet/2xtabletproject4.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject4.jpg 370w, ./images/PC/2xPCproject4.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject4.jpg" alt="Фотокартка Проєкт Prime">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -195,8 +229,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img5.jpg" alt="фотография Проект Boxes"
-                                    height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject5.jpg 450w, ./images/mobile/2xmobileproject5.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject5.jpg 354w, ./images/tablet/2xtabletproject5.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject5.jpg 370w, ./images/PC/2xPCproject5.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject5.jpg" alt="Фотокартка Проєкт Boxes">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -211,8 +253,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img6.jpg"
-                                    alt="фотография Inspiration has no Borders" height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject6.jpg 450w, ./images/mobile/2xmobileproject6.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject6.jpg 354w, ./images/tablet/2xtabletproject6.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject6.jpg 370w, ./images/PC/2xPCproject6.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject6.jpg" alt="Фотокартка Inspiration has no Borders">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -227,8 +277,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img7.jpg"
-                                    alt="фотография Издание Limited Edition" height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject7.jpg 450w, ./images/mobile/2xmobileproject7.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject7.jpg 354w, ./images/tablet/2xtabletproject7.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject7.jpg 370w, ./images/PC/2xPCproject7.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject7.jpg" alt="Фотокартка Видавництво Limited Edition">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -244,8 +302,15 @@
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__description">
-                                <img class="portfolio__foto" src="./images/img8.jpg" alt="фотография Проект LAB"
-                                    height="294">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject8.jpg 450w, ./images/mobile/2xmobileproject8.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject8.jpg 354w, ./images/tablet/2xtabletproject8.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject8.jpg 370w, ./images/PC/2xPCproject8.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject8.jpg" alt="Фотокартка Проєкт LAB">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -260,8 +325,16 @@
                     </li>
                     <li class="portfolio__element">
                         <a class="portfolio__link" href="">
-                            <div class="portfolio__description"><img class="portfolio__foto" src="./images/img9.jpg"
-                                    alt="фотография Growing Business" height="294">
+                            <div class="portfolio__description">
+                                <picture class="portfolio__foto">
+                                    <source srcset="./images/mobile/1xmobileproject9.jpg 450w, ./images/mobile/2xmobileproject9.jpg 900w"
+                                        media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    <source srcset="./images/tablet/1xtabletproject9.jpg 354w, ./images/tablet/2xtabletproject9.jpg 708w"
+                                        media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
+                                    <source srcset="./images/PC/1xPCproject9.jpg 370w, ./images/PC/2xPCproject9.jpg 740w" media="(min-width: 768px)"
+                                        sizes="(min-width: 370px) 370px, 100vw">
+                                    <img src="./images/PC/1xPCproject9.jpg" alt="Фотокартка Growing Business">
+                                </picture>
                                 <div class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та сервісів. Все це дозволить
                                     відвідувачу отримати
@@ -281,51 +354,53 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container--alt">
-            <div class="footer__address">
-                <a href="" class="logo logo--link logo--dark"><span class="logo__text">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__items address--street">м. Київ, пр-т Лесі Українки, 26</li>
-                        <li class="address__items"><a href="mailto:info@example.com"
-                                class="address__link">info@example.com</a>
+            <div class="footer--first-flex">
+                <div class="footer__address">
+                    <a href="" class="logo logo--link logo--dark"><span class="logo__text">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__items address--street">м. Київ, пр-т Лесі Українки, 26</li>
+                            <li class="address__items"><a href="mailto:info@example.com"
+                                    class="address__link">info@example.com</a>
+                            </li>
+                            <li class="address__items"><a href="tel:+380991111111" class="address__link">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <p class="join__title">приєднуйтесь</p>
+                    <ul class="join__list">
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--instagram" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-instagramwhite"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__items"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--twitter" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-twitterwhite"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--facebook" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-facebookwhite"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__items">
+                            <a class="join__link" href="">
+                                <svg class="join__icon join__icon--linkedin" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-linkedinwhite"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <p class="join__title">приєднуйтесь</p>
-                <ul class="join__list">
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--instagram" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-instagramwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--twitter" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-twitterwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--facebook" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-facebookwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__items">
-                        <a class="join__link" href="">
-                            <svg class="join__icon join__icon--linkedin" width="22" height="22">
-                                <use href="./images/sprite.svg#icon-linkedinwhite"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="join-form">
                 <form>
