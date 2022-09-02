@@ -366,12 +366,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 480px) {
-  .container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -394,12 +388,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 480px) {
-  .container--alt {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
 @media screen and (min-width: 480px) {
   .container--alt {
@@ -1733,7 +1721,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .join-form__input {
-    min-width: 100vw;
+    min-width: 95vw;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .join-form__input {
+    min-width: 450px;
   }
 }
 
