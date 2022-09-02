@@ -192,11 +192,9 @@
 }
 
 .hline:after {
-    @media screen and (min-width: 768px) {
-        content: " ";
-        display: block;
-        border-bottom: 1px solid #ECECEC;
-    }
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav--current::after {

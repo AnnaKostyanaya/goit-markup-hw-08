@@ -992,12 +992,10 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .hline:after {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #ECECEC;
-  }
+.hline:after {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
