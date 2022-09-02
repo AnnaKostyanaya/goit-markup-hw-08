@@ -224,6 +224,7 @@
 .menu-container {
     display: none;
     position: absolute;
+    left: -0.1px;
     top: -1px;
     background-color: var(--main-backgroundcolor);
     padding: 48px 40px;
