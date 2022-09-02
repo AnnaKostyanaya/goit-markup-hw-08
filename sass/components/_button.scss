@@ -83,6 +83,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
     margin: 0;
     padding: 10px 0px;
     cursor: pointer;
@@ -99,21 +100,15 @@
     height: 40px;
 }
 
-.menu-close {
-    position: absolute;
-    top: -0.1%;
-    left: 89%;
-}
-
-.menu-close .icon-cross {
+.toggle-menu .icon-cross {
     display: none;
 }
 
-.menu-container.is-open .icon-cross {
+.toggle-menu.is-open .icon-cross {
     display: block;
 }
 
-.menu-container.is-open .icon-menu {
+.toggle-menu.is-open .icon-menu {
     display: none;
 }
 
