@@ -22,14 +22,14 @@
         <div class="container mobile-container">
             <div class="mobile-menu">
                 <a href="" class="logo logo--link"><span class="logo__text">Web</span>Studio</a>
-                <button type="button" class="menu-open js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+                <button type="button" class="toggle-menu menu-open js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" height="40">
                         <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
             </div>
             <div class="menu-container js-menu-container" id="mobile-menu">
-                <button type="button" class="menu-close js-close-menu" aria-controls="mobile-menu" aria-expanded="false">
+                <button type="button" class="toggle-menu menu-close js-close-menu" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="menu-toggle__icons" aria-label="Переключатель мобільного меню" width="40" height="40">
                         <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
                     </svg>
@@ -77,7 +77,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+            </div>
         </div>
         <div class="container">
             <div class="container__nav">
@@ -257,11 +257,11 @@
                     <li class="team__items">
                             <picture class="team__foto">
                                 <source srcset="./images/mobile/1xmobilefoto1.jpg 450w, ./images/mobile/2xmobilefoto1.jpg 900w"
-                                    media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                    media="(max-width: 768px)" sizes="(min-width: 450px) 450px, 100vw">
+                                <source srcset="./images/PC/1xfoto1.jpg 270w, ./images/PC/2xfoto1.jpg 540w" 
+                                    media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
                                 <source srcset="./images/tablet/tablet1xfoto1.jpg 354w, ./images/tablet/tablet2xfoto1.jpg 708w"
-                                    media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
-                                <source srcset="./images/PC/1xfoto1.jpg 270w, ./images/PC/2xfoto1.jpg 540w"
-                                    media="(min-width: 768px)" sizes="(min-width: 270px) 270px, 100vw">
+                                    media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
                                 <img src="./images/PC/1xfoto1.jpg" alt="Фотокартка співробітника">
                             </picture>
                         <h3 class="team__name">Игорь Демьяненко</h3>
@@ -300,11 +300,11 @@
                     <li class="team__items">
                         <picture class="team__foto">
                             <source srcset="./images/mobile/1xmobilefoto2.jpg 450w, ./images/mobile/2xmobilefoto2.jpg 900w"
-                                media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                media="(max-width: 768px)" sizes="(min-width: 450px) 450px, 100vw">
+                            <source srcset="./images/PC/1xfoto2.jpg 270w, ./images/PC/2xfoto2.jpg 540w" 
+                                media="(min-width: 768px)" sizes="(min-width: 270px) 270px, 100vw">
                             <source srcset="./images/tablet/tablet1xfoto2.jpg 354w, ./images/tablet/tablet2xfoto2.jpg 708w"
-                                media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
-                            <source srcset="./images/PC/1xfoto2.jpg 270w, ./images/PC/2xfoto2.jpg 540w" media="(min-width: 768px)"
-                                sizes="(min-width: 270px) 270px, 100vw">
+                                media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
                             <img src="./images/PC/1xfoto2.jpg" alt="Фотокартка співробітника">
                         </picture>
                         <h3 class="team__name">Ольга Репина</h3>
@@ -343,11 +343,11 @@
                     <li class="team__items">
                         <picture class="team__foto">
                             <source srcset="./images/mobile/1xmobilefoto3.jpg 450w, ./images/mobile/2xmobilefoto3.jpg 900w"
-                                media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                media="(max-width: 768px)" sizes="(min-width: 450px) 450px, 100vw">
+                            <source srcset="./images/PC/1xfoto3.jpg 270w, ./images/PC/2xfoto3.jpg 540w" 
+                                media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
                             <source srcset="./images/tablet/tablet1xfoto3.jpg 354w, ./images/tablet/tablet2xfoto3.jpg 708w"
-                                media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
-                            <source srcset="./images/PC/1xfoto3.jpg 270w, ./images/PC/2xfoto3.jpg 540w" media="(min-width: 768px)"
-                                sizes="(min-width: 270px) 270px, 100vw">
+                                media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
                             <img src="./images/PC/1xfoto3.jpg" alt="Фотокартка співробітника">
                         </picture>
                         <h3 class="team__name">Николай Тарасов</h3>
@@ -386,11 +386,11 @@
                     <li class="team__items">
                         <picture class="team__foto">
                             <source srcset="./images/mobile/1xmobilefoto4.jpg 450w, ./images/mobile/2xmobilefoto4.jpg 900w"
-                                media="(max-width: 479px)" sizes="(min-width: 450px) 450px, 100vw">
+                                media="(max-width: 768px)" sizes="(min-width: 450px) 450px, 100vw">
+                            <source srcset="./images/PC/1xfoto4.jpg 270w, ./images/PC/2xfoto4.jpg 540w" 
+                                media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
                             <source srcset="./images/tablet/tablet1xfoto4.jpg 354w, ./images/tablet/tablet2xfoto4.jpg 708w"
-                                media="(min-width: 480px)" sizes="(min-width: 354px) 354px, 100vw">
-                            <source srcset="./images/PC/1xfoto4.jpg 270w, ./images/PC/2xfoto4.jpg 540w" media="(min-width: 768px)"
-                                sizes="(min-width: 270px) 270px, 100vw">
+                                media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
                             <img src="./images/PC/1xfoto4.jpg" alt="Фотокартка співробітника">
                         </picture>
                         <h3 class="team__name">Михаил Ермаков</h3>

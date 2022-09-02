@@ -79,11 +79,13 @@
     }
 }
 
-.menu-close,
-.menu-open {
-    display: block;
+.toggle-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 10px 0px;
+    cursor: pointer;
     border: none;
     background-color: transparent;
 
