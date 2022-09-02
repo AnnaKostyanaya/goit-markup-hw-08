@@ -27,7 +27,7 @@
 .team__foto {
     width: 100vw;
     // margin-bottom: 30px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
         width: 450px;
         height: 460px;       
         display: flex;
@@ -36,7 +36,7 @@
         margin-right: auto;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 354px;
         height: 374px;
     }
@@ -50,12 +50,12 @@
 .team__list {
     @extend %list;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -66,13 +66,13 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .team__items {
         margin-bottom: 30px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .team__items {
         margin: 15px;
     }
@@ -95,13 +95,13 @@
     align-items: center;
     @extend %list;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         margin-left: 122px;
         margin-right: 122px;
         margin-bottom: 24px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         margin-left: 74px;
         margin-right: 74px;
         margin-bottom: 24px;

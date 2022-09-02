@@ -25,7 +25,7 @@
 .menu__list {
     @extend %list;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         row-gap: 15px;
@@ -34,7 +34,7 @@
         width: 326px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         display: flex;
         justify-content: center;
         margin-bottom: 14px;
