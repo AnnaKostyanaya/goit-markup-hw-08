@@ -1370,7 +1370,7 @@ img {
 }
 
 .team__foto {
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .team__foto {
@@ -1395,7 +1395,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
