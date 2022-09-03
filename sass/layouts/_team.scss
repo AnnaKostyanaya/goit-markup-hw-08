@@ -49,6 +49,7 @@
 
 .team__list {
     @extend %list;
+    width: 100%;
 
     @media screen and (max-width: 767px) {
     display: flex;
@@ -68,6 +69,7 @@
 
 @media screen and (max-width: 767px) {
     .team__items {
+        width: 100%;
         margin-bottom: 30px;
     }
 }

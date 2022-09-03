@@ -36,7 +36,7 @@
 }
 
 .feature__items {
-    width: 100vw;
+    width: 100%;
 @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
 }
@@ -51,7 +51,7 @@
 
 .feature__box {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
